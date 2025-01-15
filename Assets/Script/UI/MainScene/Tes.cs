@@ -14,9 +14,15 @@ public class Tes : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            HealthSystem.Instance.UpdateHealth(50);
-            ExpSystem.Instance.UpdateEXP(50);
-            ExpSystem.Instance.UpdateLevel(20);
+           //HealthSystem.Instance.UpdateHealth(50);
+            //ExpSystem.Instance.UpdateEXP(50);
+            //ExpSystem.Instance.UpdateLevel(20);
+            UpgradeSystem.Instance.showUpgradeMenu();
         }
+        else if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            UpgradeSystem.Instance.hideUpgradeMenu();
+        }
+
     }
 }

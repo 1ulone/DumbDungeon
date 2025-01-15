@@ -7,6 +7,7 @@ public class HealthSystem : MonoBehaviour
     public static HealthSystem Instance { get; private set; }
 
     [SerializeField] private Image maskHP;
+    //setting maxhp disini mas
     public int maximumHP;
     private float currentHP;
 

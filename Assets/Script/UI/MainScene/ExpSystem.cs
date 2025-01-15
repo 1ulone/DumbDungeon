@@ -9,7 +9,7 @@ public class ExpSystem : MonoBehaviour
 
     [SerializeField] private Image maskEXP;
     [SerializeField] private TextMeshProUGUI textLVL;
-
+    //setting max exp disini mas
     public int maximumEXP;
     private float currentEXP;
 
