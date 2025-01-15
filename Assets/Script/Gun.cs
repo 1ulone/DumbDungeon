@@ -45,8 +45,8 @@ public class Gun : ScriptableObject
 
 	private void StraightShot()
 	{
-		//Bullet bullet = Pool.instances.Create("bullet", position.position, parent.rotation).GetComponent<Bullet>();
-		//bullet.MoveBullet(dir);
+		Bullet bullet = Pool.instances.Create("bullet", position.position, parent.rotation).GetComponent<Bullet>();
+		bullet.MoveBullet(dir);
 	}
 
 	private void Spread() {}
